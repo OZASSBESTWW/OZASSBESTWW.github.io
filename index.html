@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url(/images/Background.jpg);
+            font-family: 'Calibri';
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            border: 10px solid transparent;
+            border-image: linear-gradient(to right, rgb(119, 0, 255), rgb(89, 0, 255)) 30;
+            border-image-slice: 1;
+        }
+
+        .video-section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        video {
+            width: 400px;
+            height: 400px;
+        }
+
+        button {
+            font-size: 40px;
+            font-family: 'Calibri';
+            text-align: center;
+            background-color: rgb(119, 0, 255);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: rgb(89, 0, 255);
+        }
+
+        h1, h2 {
+            font-family: 'Calibri';
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .video-heading {
+            font-family: 'Calibri';
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+
+        .video-heading-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <title>My First Website!</title>
+</head>
+<body>
+    <h1>Hello Good People!</h1>
+    <h2>I'm here to advertise my YouTube channel to get some recognition!</h2>
+
+    <a href="https://www.youtube.com/channel/UCVe5BkUlY5Qm951LQb6iu_A" target="_blank" title="This is my YouTube channel!">
+        <button>Youtube Channel!</button>
+    </a>
+    <h3 class="video-heading">Video Examples</h3>
+
+    <div class="video-container">
+        <div class="video-heading-container">
+        </div>
+        <div class="video-section">
+            <video controls poster="/Images/Thumbnail One.jpg" src="/Videos/Video One.mp4"></video>
+        </div>
+        <div class="video-section">
+            <video controls poster="/Images/Thumbnail Two.jpg" src="/Videos/Video Two.mp4"></video>
+        </div>
+        <div class="video-section">
+            <video controls poster="/Images/Thumbnail Three.jpg" src="/Videos/Video Three.mp4"></video>
+        </div>
+        <div class="video-section">
+            <video controls poster="/Images/Thumbnail Four.jpg" src="/Videos/Video Four.mp4"></video>
+        </div>
+    </div>
+</body>
+</html>
