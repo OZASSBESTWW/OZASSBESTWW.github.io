@@ -1,0 +1,31 @@
+body {
+    background-image: url(Background.jpg);
+    font-family: 'Calibri';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#About-Me {
+    font-family: 'Calibri';
+    text-align: center;
+    margin-top: 20px;
+    font-size: 80px;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+#Paragraph {
+    font-family: 'Calibri';
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    color: whitesmoke;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+#Premiere {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 1);
+    border: 3px solid rgb(255, 255, 255);
+}

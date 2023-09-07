@@ -68,3 +68,47 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
 }
+
+.button-container {
+    display:flex;
+    flex-direction: row;
+}
+
+#Texturepack-Button {
+    font-size: 40px;
+    font-family: 'Calibri';
+    text-align: center;
+    background-color: rgba(0, 195, 255, 0.842);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#AboutMe-Button {
+    font-size: 40px;
+    font-family: 'Calibri';
+    text-align: right;
+    background-color: rgba(0, 195, 255, 0.842);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#Discord-Button {
+    font-size: 40px;
+    font-family: 'Calibri';
+    text-align: left;
+    background-color: rgba(0, 195, 255, 0.842);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
