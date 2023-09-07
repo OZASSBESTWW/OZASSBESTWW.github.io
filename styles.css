@@ -113,3 +113,13 @@ h1, h2, h3 {
     transition: background-color 0.3s;
     margin-top: 20px;
 }
+#subscriberCountContainer {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: Add a background color */
+    color: white; /* Optional: Set text color */
+    padding: 10px; /* Optional: Add padding for better visibility */
+    font-size: 30px;
+    font-family: 'Calibri';
+} 

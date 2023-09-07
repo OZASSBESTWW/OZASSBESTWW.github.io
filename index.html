@@ -3,8 +3,24 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>My First Website!</title>
+    <script>
+        function getSubscriberCount() {
+            // Replace 'YOUR_API_KEY' with your actual API key
+            const apiKey = 'AIzaSyDZaY45TE0L2F-UX5TIRhvzpGxixwbO9-E';
+            const channelId = 'UCVe5BkUlY5Qm951LQb6iu_A'; // Replace with your channel ID
+            const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const subscriberCount = data.items[0].statistics.subscriberCount;
+                    document.getElementById('subscriberCount').textContent = `Subscribers: ${subscriberCount}`;
+                })
+                .catch(error => console.error(error));
+        }
+    </script>
 </head>
-<body>
+<body onload="getSubscriberCount()">
     <h1>Hello Good People!</h1>
     <h2>I'm here to advertise my YouTube channel to get some recognition!</h2>
 
@@ -35,5 +51,10 @@
     <a href="/page 2.html" target="_self" title="Page 2!">
         <button id="NextPage-Button">Next Page</button>
     </a>
+
+    <!-- Add the subscriber count container -->
+    <div id="subscriberCountContainer">
+        <p id="subscriberCount"></p>
+    </div>
 </body>
 </html>
