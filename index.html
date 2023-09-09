@@ -2,7 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>My First Website!</title>
+    <title>OZAS We</title>
+    <link rel=icon type="image/x-icon" href="Favicon/favicon.ico">
     <script>
         function getSubscriberCount() {
             // Replace 'YOUR_API_KEY' with your actual API key
@@ -21,36 +22,41 @@
     </script>
 </head>
 <body onload="getSubscriberCount()">
+    <div class="button-container">
+        <a href="https://www.youtube.com/channel/UCVe5BkUlY5Qm951LQb6iu_A" target="_blank" title="This is my YouTube channel!">
+            <button id="Youtube-Link">Youtube Channel!</button>
+        </a>
+        <a href="https://discord.gg/JvKNWuqyaw" title="join now!" target="_blank">
+            <button id="Discord-Button">Discord</button>
+        </a>
+        <a href="https://www.mediafire.com/file/6m5cpxaik0wj06m/resourcepacks.rar/file" target="_blank" title="Mediafire">
+            <button id="Texturepack-Button">Texturepack Downloads</button>
+        </a>
+    </div>
+
     <h1>Hello Good People!</h1>
     <h2>I'm here to advertise my YouTube channel to get some recognition!</h2>
 
-    <a href="https://www.youtube.com/channel/UCVe5BkUlY5Qm951LQb6iu_A" target="_blank" title="This is my YouTube channel!">
-        <button id="Youtube-Link">Youtube Channel!</button>
+    <!-- Move the 'Next Page' button here -->
+    <a href="/page2.html" target="_self" title="Page 2!">
+        <button id="NextPage-Button">Next Page</button>
     </a>
+
     <h3 class="video-heading">Video Examples</h3>
 
     <div class="video-container">
         <div class="video-heading-container">
         </div>
         <div class="video-section">
-            <iframe width="500" height="400" src="https://www.youtube.com/embed/47QvzZQyAZs" frameborder="0" allowfullscreen></iframe>
+            <iframe width="575" height="400" src="https://www.youtube.com/embed/47QvzZQyAZs" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-section">
-            <iframe width="500" height="400" src="https://www.youtube.com/embed/uyf4IAbBkgA" frameborder="0" allowfullscreen></iframe>
+            <iframe width="575" height="400" src="https://www.youtube.com/embed/uyf4IAbBkgA" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-section">
-            <iframe width="500" height="400" src="https://www.youtube.com/embed/EzF61RVbgS0" frameborder="0" allowfullscreen></iframe>
+            <iframe width="575" height="400" src="https://www.youtube.com/embed/EzF61RVbgS0" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-    <a href="https://discord.gg/JvKNWuqyaw" title="join now!" target="_blank">
-        <button id="Discord-Button">Discord</button>
-    </a>
-    <a href="https://www.mediafire.com/file/6m5cpxaik0wj06m/resourcepacks.rar/file" target="_blank" title="Mediafire">
-        <button id="Texturepack-Button">Texturepack Downloads</button>
-    </a>
-    <a href="/page 2.html" target="_self" title="Page 2!">
-        <button id="NextPage-Button">Next Page</button>
-    </a>
 
     <!-- Add the subscriber count container -->
     <div id="subscriberCountContainer">
