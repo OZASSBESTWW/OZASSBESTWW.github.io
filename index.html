@@ -1,66 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>OZAS We</title>
-    <link rel=icon type="image/x-icon" href="Favicon/favicon.ico">
-    <script>
-        function getSubscriberCount() {
-            // Replace 'YOUR_API_KEY' with your actual API key
-            const apiKey = 'AIzaSyDZaY45TE0L2F-UX5TIRhvzpGxixwbO9-E';
-            const channelId = 'UCVe5BkUlY5Qm951LQb6iu_A'; // Replace with your channel ID
-            const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`;
-
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    const subscriberCount = data.items[0].statistics.subscriberCount;
-                    document.getElementById('subscriberCount').textContent = `Subscribers: ${subscriberCount}`;
-                })
-                .catch(error => console.error(error));
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="getSubscriberCount()">
-    <div class="button-container">
-        <a href="https://www.youtube.com/channel/UCVe5BkUlY5Qm951LQb6iu_A" target="_blank" title="This is my YouTube channel!">
-            <button id="Youtube-Link">Youtube Channel!</button>
-        </a>
-        <a href="https://discord.gg/JvKNWuqyaw" title="join now!" target="_blank">
-            <button id="Discord-Button">Discord</button>
-        </a>
-        <a href="https://www.mediafire.com/file/6m5cpxaik0wj06m/resourcepacks.rar/file" target="_blank" title="Mediafire">
-            <button id="Texturepack-Button">Texturepack Downloads</button>
-        </a>
-    </div>
-
-    <h1>Hello Good People!</h1>
-    <h2>I'm here to advertise my YouTube channel to get some recognition!</h2>
-
-    <!-- Move the 'Next Page' button here -->
-    <a href="/page2.html" target="_self" title="Page 2!">
-        <button id="NextPage-Button">Next Page</button>
-    </a>
-
-    <h3 class="video-heading">Video Examples</h3>
-
-    <div class="video-container">
-        <div class="video-heading-container">
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
         </div>
-        <div class="video-section">
-            <iframe width="575" height="400" src="https://www.youtube.com/embed/47QvzZQyAZs" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-section">
-            <iframe width="575" height="400" src="https://www.youtube.com/embed/uyf4IAbBkgA" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-section">
-            <iframe width="575" height="400" src="https://www.youtube.com/embed/EzF61RVbgS0" frameborder="0" allowfullscreen></iframe>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
         </div>
     </div>
-
-    <!-- Add the subscriber count container -->
-    <div id="subscriberCountContainer">
-        <p id="subscriberCount"></p>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
